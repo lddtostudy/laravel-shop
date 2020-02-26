@@ -98,9 +98,21 @@ class UsersController extends Controller
 
 //        // 不在页面显示 `新建` 按钮，因为我们不需要在后台新建用户
 //        $grid->disableCreateButton();
+
+        //                                                              第一种写法
 //        // 同时在每一行也不显示 `编辑` 按钮
-//        $grid->disableActions();
-//
+//        $grid->disableActions();//6.0写法直接禁止操作列
+
+        //                                                                  第二种写法
+//          $grid->actions(function ($actions) {//5.8写法，禁用后面的操作，但是不禁用操作列
+//            // 不在每一行后面展示查看按钮
+//            $actions->disableView();
+//            // 不在每一行后面展示删除按钮
+//            $actions->disableDelete();
+//            // 不在每一行后面展示编辑按钮
+//            $actions->disableEdit();
+//          });
+        //
 //        $grid->tools(function ($tools) {
 //            // 禁用批量删除按钮
 //            $tools->batch(function ($batch) {
