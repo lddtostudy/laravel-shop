@@ -26,6 +26,6 @@ class Product extends Model
         if (Str::startsWith($this->attributes['image'], ['http://', 'https://'])) {
             return $this->attributes['image'];
         }
-        return 'admin_img/'.$this->attributes['image'];
+        return '../admin_img/'.$this->attributes['image'];
     }
 }
