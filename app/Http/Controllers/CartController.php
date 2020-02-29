@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use App\Http\Requests\AddCartRequest;
+use App\Models\ProductSku;
 use App\Models\CartItem;
 
 use Illuminate\Http\Request;
@@ -28,6 +29,20 @@ class CartController extends Controller
             $cart->productSku()->associate($skuId);//把 $skuId 赋值给 $cart->product_sku_id 字段
             $cart->save();
         }
+
+        return [];
+    }
+
+    public function index(Request $request)
+    {
+        $cartItems = $request->user()->cartItems()->with(['productSku.product'])->get();//联合查询productSku和product相对应的数据
+        //$cartitems的结构为item=》{product_sku=》{product=》{}}}
+        return view('cart.index', ['cartItems' => $cartItems]);
+    }
+
+    public function remove(ProductSku $sku, Request $request)
+    {
+        $request->user()->cartItems()->where('product_sku_id', $sku->id)->delete();
 
         return [];
     }
