@@ -37,7 +37,8 @@ class CartController extends Controller
     {
         $cartItems = $request->user()->cartItems()->with(['productSku.product'])->get();//联合查询productSku和product相对应的数据
         //$cartitems的结构为item=》{product_sku=》{product=》{}}}
-        return view('cart.index', ['cartItems' => $cartItems]);
+        $addresses = $request->user()->addresses()->orderBy('last_used_at', 'desc')->get();
+        return view('cart.index', ['cartItems' => $cartItems,'addresses' => $addresses]);
     }
 
     public function remove(ProductSku $sku, Request $request)
