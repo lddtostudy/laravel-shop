@@ -16,7 +16,7 @@ Route::redirect('/', '/products')->name('root');//商品列表首页
 Route::get('products', 'ProductsController@index')->name('products.index');
 Route::get('products/{product}', 'ProductsController@show')->name('products.show')->where(['product' => '[0-9]+']);
 Auth::routes(['verify' => true]);
-//Route::get('alipay', function() {
+//Route::get('alipay', function() {//测试支付
 //    return app('alipay')->web([
 //        'out_trade_no' => time(),
 //        'total_amount' => '1',
@@ -40,5 +40,8 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     Route::post('orders', 'OrdersController@store')->name('orders.store');
     Route::get('orders', 'OrdersController@index')->name('orders.index');
     Route::get('orders/{order}', 'OrdersController@show')->name('orders.show');
+    Route::get('payment/{order}/alipay', 'PaymentController@payByAlipay')->name('payment.alipay');//支付宝支付
+    Route::get('payment/alipay/return', 'PaymentController@alipayReturn')->name('payment.alipay.return');//获取支付宝前端回调的参数
 });
+Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('payment.alipay.notify');//获取支付宝服务器端回调的参数
 
