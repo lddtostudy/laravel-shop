@@ -42,6 +42,7 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     Route::get('orders/{order}', 'OrdersController@show')->name('orders.show');
     Route::get('payment/{order}/alipay', 'PaymentController@payByAlipay')->name('payment.alipay');//支付宝支付
     Route::get('payment/alipay/return', 'PaymentController@alipayReturn')->name('payment.alipay.return');//获取支付宝前端回调的参数
+    Route::post('orders/{order}/received', 'OrdersController@received')->name('orders.received');
 });
 Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('payment.alipay.notify');//获取支付宝服务器端回调的参数
 
