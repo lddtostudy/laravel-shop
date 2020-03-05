@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.27, for Linux (x86_64)
 --
--- Host: localhost    Database: laravel-shop
+-- Host: 127.0.0.1    Database: laravel-shop
 -- ------------------------------------------------------
 -- Server version	5.7.27-0ubuntu0.18.04.1
 
@@ -21,7 +21,7 @@
 
 LOCK TABLES `admin_menu` WRITE;
 /*!40000 ALTER TABLE `admin_menu` DISABLE KEYS */;
-INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,NULL,'2020-02-24 19:53:09'),(2,0,5,'系统管理员','fa-tasks',NULL,NULL,NULL,'2020-03-03 18:55:51'),(3,2,6,'管理员','fa-users','auth/users',NULL,NULL,'2020-03-03 18:55:51'),(4,2,7,'角色','fa-user','auth/roles',NULL,NULL,'2020-03-03 18:55:51'),(5,2,8,'权限','fa-ban','auth/permissions',NULL,NULL,'2020-03-03 18:55:51'),(6,2,9,'菜单','fa-bars','auth/menu',NULL,NULL,'2020-03-03 18:55:51'),(7,2,10,'操作日志','fa-history','auth/logs',NULL,NULL,'2020-03-03 18:55:51'),(8,0,2,'用户管理','fa-users','/users',NULL,'2020-02-25 18:22:07','2020-02-25 18:22:23'),(9,0,3,'商品管理','fa-cubes','/products',NULL,'2020-02-26 18:02:23','2020-02-26 18:02:36'),(10,0,4,'订单管理','fa-rmb','/orders',NULL,'2020-03-03 18:55:42','2020-03-03 18:55:51');
+INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,NULL,'2020-02-24 19:53:09'),(2,0,6,'系统管理员','fa-tasks',NULL,NULL,NULL,'2020-03-05 18:20:47'),(3,2,7,'管理员','fa-users','auth/users',NULL,NULL,'2020-03-05 18:20:47'),(4,2,8,'角色','fa-user','auth/roles',NULL,NULL,'2020-03-05 18:20:47'),(5,2,9,'权限','fa-ban','auth/permissions',NULL,NULL,'2020-03-05 18:20:47'),(6,2,10,'菜单','fa-bars','auth/menu',NULL,NULL,'2020-03-05 18:20:47'),(7,2,11,'操作日志','fa-history','auth/logs',NULL,NULL,'2020-03-05 18:20:47'),(8,0,2,'用户管理','fa-users','/users',NULL,'2020-02-25 18:22:07','2020-02-25 18:22:23'),(9,0,4,'商品管理','fa-cubes','/products',NULL,'2020-02-26 18:02:23','2020-03-05 18:20:47'),(10,0,5,'订单管理','fa-rmb','/orders',NULL,'2020-03-03 18:55:42','2020-03-05 18:20:47'),(11,0,3,'类目管理','fa-bars','/categories',NULL,'2020-03-05 18:20:15','2020-03-05 18:20:47');
 /*!40000 ALTER TABLE `admin_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,7 +90,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `admin_users` WRITE;
 /*!40000 ALTER TABLE `admin_users` DISABLE KEYS */;
-INSERT INTO `admin_users` VALUES (1,'admin','$2y$10$IcOUlWiZHiRzqqs2qjLIsuG89SvCVaXCHTOfIhSMeb3aF9YCC6DCi','Administrator',NULL,'uBAKiVlpXGux5PgMKwr3gWMR0vULsHdaHz5wO0jYH4EcBL216bzNXhio80fp','2020-02-24 19:46:21','2020-02-24 19:46:21'),(2,'operation','$2y$10$Yz0xVBmTjyDixqNYULtypO58/43qLQS15nPZe7wjMHq6KQMJ1SKTi','运营',NULL,'Byp8AWf7CA0DNHklMqYULpLpHOWGbqcP2K3pzf5AJ7tFV5hGkDwro8VKHd4q','2020-02-25 18:40:38','2020-03-05 14:00:38');
+INSERT INTO `admin_users` VALUES (1,'admin','$2y$10$IcOUlWiZHiRzqqs2qjLIsuG89SvCVaXCHTOfIhSMeb3aF9YCC6DCi','Administrator',NULL,'uBAKiVlpXGux5PgMKwr3gWMR0vULsHdaHz5wO0jYH4EcBL216bzNXhio80fp','2020-02-24 19:46:21','2020-02-24 19:46:21'),(2,'operation','$2y$10$Yz0xVBmTjyDixqNYULtypO58/43qLQS15nPZe7wjMHq6KQMJ1SKTi','运营',NULL,'s1bucbjqsE97UlZN8yBsVIVZdjrkHBFNb9fkZTeOfF8DvslUODdEIvEKPFXd','2020-02-25 18:40:38','2020-03-05 14:00:38');
 /*!40000 ALTER TABLE `admin_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -103,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-05  6:39:38
+-- Dump completed on 2020-03-05 10:27:30
