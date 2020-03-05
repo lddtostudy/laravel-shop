@@ -30,4 +30,9 @@ class Product extends Model
         $url='http://'.$_SERVER['HTTP_HOST'].substr($PHP_SELF,0,strrpos($PHP_SELF,'/')+1);
         return $url.'/admin_img/'.$this->attributes['image'];
     }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
