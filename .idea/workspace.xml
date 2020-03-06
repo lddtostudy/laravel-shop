@@ -25,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Models/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-680">
+            <state relative-caret-position="-827">
               <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
             </state>
           </provider>
@@ -34,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+            <state relative-caret-position="140">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
                 <element signature="e#39#62#0#PHP" expanded="true" />
               </folding>
@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/products/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+            <state relative-caret-position="80">
+              <caret line="55" column="51" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="51" />
               <folding>
                 <element signature="e#1413#1417#1#HTML" expanded="true" />
               </folding>
@@ -55,11 +55,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/ViewComposers/CategoryTreeComposer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+            <state relative-caret-position="440">
+              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+              <folding>
+                <element signature="e#41#74#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Services/CategoryService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-47">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+              <folding>
+                <element signature="e#33#72#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,12 +114,17 @@
       <find>.receive-button</find>
       <find>HasResourceActions</find>
       <find>ajax</find>
+      <find>filters</find>
+      <find>filters1</find>
+      <find>.products-index-page</find>
+      <find>children</find>
     </findStrings>
     <replaceStrings>
       <replace>App\Models\User</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\LDD\Code\laravel-shop</dir>
+      <dir>C:\Users\LDD\Code\laravel-shop\app</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -104,10 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/cart/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Policies/OrderPolicy.php" />
         <option value="$PROJECT_DIR$/app/Services/CartService.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/CartController.php" />
         <option value="$PROJECT_DIR$/app/Services/OrderService.php" />
@@ -134,7 +159,6 @@
         <option value="$PROJECT_DIR$/resources/views/orders/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Order.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/OrdersController.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/orders/show.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/UserAddressesSeeder.php" />
@@ -152,9 +176,14 @@
         <option value="$PROJECT_DIR$/app/Admin/Controllers/CategoriesController.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/database/factories/ProductFactory.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/resources/views/products/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Services/CategoryService.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/_category_item.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/ViewComposers/CategoryTreeComposer.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -355,6 +384,13 @@
               <item name="laravel-shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-shop" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="ViewComposers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Jobs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -545,7 +581,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -607,12 +643,12 @@
       <workItem from="1583228242474" duration="5036000" />
       <workItem from="1583314069890" duration="11331000" />
       <workItem from="1583375934451" duration="13016000" />
-      <workItem from="1583457569631" duration="4295000" />
+      <workItem from="1583457569631" duration="7930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121522000" />
+    <option name="totallyTimeSpent" value="125157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -684,30 +720,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/storage/logs/alipay-2020-03-02.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2020-02-21.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="443">
-          <caret line="142" column="68" selection-start-line="142" selection-start-column="68" selection-end-line="142" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/success.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/OrderItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/CartItem.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -877,16 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
-          <folding>
-            <element signature="e#33#72#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1067,35 +1069,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
+        <state relative-caret-position="-827">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
+    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
+        <state relative-caret-position="585">
+          <caret line="563" column="1" selection-start-line="563" selection-start-column="1" selection-end-line="563" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/_category_item.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="121" selection-start-line="3" selection-start-column="121" selection-end-line="3" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/_header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/ViewComposers/CategoryTreeComposer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
           <folding>
-            <element signature="e#39#62#0#PHP" expanded="true" />
+            <element signature="e#41#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/products/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+        <state relative-caret-position="80">
+          <caret line="55" column="51" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="51" />
           <folding>
             <element signature="e#1413#1417#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+        <state relative-caret-position="140">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding>
+            <element signature="e#39#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/CategoryService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+          <folding>
+            <element signature="e#33#72#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
