@@ -89,11 +89,15 @@ class CategoriesController extends Controller
         // 用户输入的值通过 q 参数获取
         $search = $request->input('q');
         $result = Category::query()
-            ->where('is_directory', true)  // 由于这里选择的是父类目，因此需要限定 is_directory 为 true
+            ->where('is_directory', boolval($request->input('is_directory', true)))  // 由于这里选择的是父类目，因此需要限定 is_directory 为 true
             ->where('name', 'like', '%'.$search.'%')
             ->paginate();
 
         // 把查询出来的结果重新组装成 Laravel-Admin 需要的格式
+        //$result->getCollection()->map(function (Category $category) {//这一步是将查询出来的$result去掉分页和其他数据，只保留id和full_name
+        //            return ['id' => $category->id, 'text' => $category->full_name];
+        //        })
+        //$result->setCollection，这一步又把分页加了回去
         $result->setCollection($result->getCollection()->map(function (Category $category) {
             return ['id' => $category->id, 'text' => $category->full_name];
         }));
