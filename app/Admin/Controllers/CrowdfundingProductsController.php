@@ -17,7 +17,7 @@ class CrowdfundingProductsController extends CommonProductsController
     {
         return Product::TYPE_CROWDFUNDING;
     }
-    
+
     protected function customGrid(Grid $grid)
     {
         $grid->id('ID')->sortable();
