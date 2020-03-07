@@ -21,7 +21,7 @@
 
 LOCK TABLES `admin_menu` WRITE;
 /*!40000 ALTER TABLE `admin_menu` DISABLE KEYS */;
-INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,NULL,'2020-02-24 19:53:09'),(2,0,6,'系统管理员','fa-tasks',NULL,NULL,NULL,'2020-03-05 18:20:47'),(3,2,7,'管理员','fa-users','auth/users',NULL,NULL,'2020-03-05 18:20:47'),(4,2,8,'角色','fa-user','auth/roles',NULL,NULL,'2020-03-05 18:20:47'),(5,2,9,'权限','fa-ban','auth/permissions',NULL,NULL,'2020-03-05 18:20:47'),(6,2,10,'菜单','fa-bars','auth/menu',NULL,NULL,'2020-03-05 18:20:47'),(7,2,11,'操作日志','fa-history','auth/logs',NULL,NULL,'2020-03-05 18:20:47'),(8,0,2,'用户管理','fa-users','/users',NULL,'2020-02-25 18:22:07','2020-02-25 18:22:23'),(9,0,4,'商品管理','fa-cubes','/products',NULL,'2020-02-26 18:02:23','2020-03-05 18:20:47'),(10,0,5,'订单管理','fa-rmb','/orders',NULL,'2020-03-03 18:55:42','2020-03-05 18:20:47'),(11,0,3,'类目管理','fa-bars','/categories',NULL,'2020-03-05 18:20:15','2020-03-05 18:20:47');
+INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,NULL,'2020-02-24 19:53:09'),(2,0,8,'系统管理员','fa-tasks',NULL,NULL,NULL,'2020-03-07 14:31:40'),(3,2,9,'管理员','fa-users','auth/users',NULL,NULL,'2020-03-07 14:31:40'),(4,2,10,'角色','fa-user','auth/roles',NULL,NULL,'2020-03-07 14:31:40'),(5,2,11,'权限','fa-ban','auth/permissions',NULL,NULL,'2020-03-07 14:31:40'),(6,2,12,'菜单','fa-bars','auth/menu',NULL,NULL,'2020-03-07 14:31:40'),(7,2,13,'操作日志','fa-history','auth/logs',NULL,NULL,'2020-03-07 14:31:40'),(8,0,2,'用户管理','fa-users','/users',NULL,'2020-02-25 18:22:07','2020-02-25 18:22:23'),(9,0,4,'商品管理','fa-cubes','/products',NULL,'2020-02-26 18:02:23','2020-03-05 18:20:47'),(10,0,7,'订单管理','fa-rmb','/orders',NULL,'2020-03-03 18:55:42','2020-03-07 14:31:40'),(11,0,3,'类目管理','fa-bars','/categories',NULL,'2020-03-05 18:20:15','2020-03-05 18:20:47'),(12,9,6,'众筹商品','fa-flag-checkered','/crowdfunding_products',NULL,'2020-03-07 14:30:43','2020-03-07 14:31:40'),(13,9,5,'普通商品','fa-cubes','/products',NULL,'2020-03-07 14:31:19','2020-03-07 14:31:40');
 /*!40000 ALTER TABLE `admin_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -103,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-05 10:27:30
+-- Dump completed on 2020-03-07  6:40:29
