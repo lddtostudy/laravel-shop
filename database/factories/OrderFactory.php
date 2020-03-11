@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\CouponCode;
 use App\Models\Order;
 use App\Models\User;
 use Faker\Generator as Faker;
@@ -14,8 +13,6 @@ $factory->define(Order::class, function (Faker $faker) {
     $refund = random_int(0, 10) < 1;
     // 随机生成发货状态
     $ship = $faker->randomElement(array_keys(Order::$shipStatusMap));
-    // 优惠券
-    $coupon = null;
 
     return [
         'address'        => [
@@ -40,6 +37,5 @@ $factory->define(Order::class, function (Faker $faker) {
         ],
         'extra'          => $refund ? ['refund_reason' => $faker->sentence] : [],
         'user_id'        => $user->id,
-        'coupon_code_id' => $coupon ? $coupon->id : null,
     ];
 });

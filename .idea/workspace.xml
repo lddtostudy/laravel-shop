@@ -70,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
@@ -79,12 +79,34 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/OrdersSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding>
+                <element signature="e#7#28#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/factories/OrderFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+              <folding>
+                <element signature="e#8#29#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>guest</find>
-      <find>function user</find>
       <find>App\User</find>
       <find>Illuminate\Translation\TranslationServiceProvider::class,</find>
       <find>locale</find>
@@ -113,6 +135,8 @@
       <find>laravel</find>
       <find>Order::getAvailableRefundNo()</find>
       <find>app(</find>
+      <find>coupon</find>
+      <find>$coupon</find>
     </findStrings>
     <replaceStrings>
       <replace>App\Models\User</replace>
@@ -132,7 +156,6 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/Admin/HandleRefundRequest.php" />
         <option value="$PROJECT_DIR$/database/seeds/UsersSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/UserAddressesSeeder.php" />
-        <option value="$PROJECT_DIR$/database/factories/OrderFactory.php" />
         <option value="$PROJECT_DIR$/database/factories/OrderItemFactory.php" />
         <option value="$PROJECT_DIR$/database/seeds/OrdersSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_03_05_161957_create_categories_table.php" />
@@ -179,6 +202,7 @@
         <option value="$PROJECT_DIR$/app/Services/OrderService.php" />
         <option value="$PROJECT_DIR$/app/Jobs/RefundCrowdfundingOrders.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/factories/OrderFactory.php" />
       </list>
     </option>
   </component>
@@ -285,7 +309,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/horizon" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -660,12 +684,12 @@
       <workItem from="1583651256903" duration="12728000" />
       <workItem from="1583716705787" duration="110000" />
       <workItem from="1583724403934" duration="5000" />
-      <workItem from="1583896657932" duration="47000" />
+      <workItem from="1583896657932" duration="847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144544000" />
+    <option name="totallyTimeSpent" value="145344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -737,29 +761,12 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/ProductsSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/CategoriesSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
           <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
           <folding>
             <element signature="e#7#31#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/OrdersSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="55" column="41" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="41" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1154,6 +1161,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/OrdersSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/OrderFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+          <folding>
+            <element signature="e#8#29#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
