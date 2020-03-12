@@ -16,6 +16,7 @@ Route::redirect('/', '/products')->name('root');//商品列表首页
 Route::get('products', 'ProductsController@index')->name('products.index');
 Route::get('products/{product}', 'ProductsController@show')->name('products.show')->where(['product' => '[0-9]+']);
 //Auth::routes(['verify' => true]);
+Auth::routes();
 // auth 中间件代表需要登录，verified中间件代表需要经过邮箱验证
 Route::group(['middleware' => ['auth']], function() {
     Route::get('user_addresses', 'UserAddressesController@index')->name('user_addresses.index');
