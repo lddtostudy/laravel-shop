@@ -11,8 +11,12 @@ Route::group([
     'middleware'    => config('admin.route.middleware'),
 ], function (Router $router) {
     $router->get('/', 'HomeController@index');
-    $router->get('users', 'UsersController@index');
-    $router->get('users/{id}/edit', 'UsersController@show');
+//    Route::resource('users', 'UsersController');
+    $router->get('/users', 'UsersController@index')->name('admin.users.index');
+    $router->get('/users/{user}', 'UsersController@show')->name('admin.users.show');
+    $router->get('/users/{id}/edit', 'UsersController@edit')->name('admin.users.edit');
+    $router->put('/users/{id}', 'UsersController@update')->name('admin.users.update');
+    $router->delete('/users/{id}', 'UsersController@destroy')->name('admin.users.destroy');
     $router->get('products', 'ProductsController@index');
     $router->get('products/create', 'ProductsController@create');
     $router->post('products', 'ProductsController@store');

@@ -38,9 +38,8 @@ class UsersController extends Controller
     public function show($id, Content $content)
     {
         return $content
-            ->header('Detail')
-            ->description('description')
-            ->body($this->detail($id));
+            ->header('用户详细信息')
+            ->body(view('admin.users.show', ['user' => User::find($id)]));
     }
 
     /**
@@ -53,8 +52,7 @@ class UsersController extends Controller
     public function edit($id, Content $content)
     {
         return $content
-            ->header('Edit')
-            ->description('description')
+            ->header('编辑用户')
             ->body($this->form()->edit($id));
     }
 
@@ -67,8 +65,7 @@ class UsersController extends Controller
     public function create(Content $content)
     {
         return $content
-            ->header('Create')
-            ->description('description')
+            ->header('创建用户')
             ->body($this->form());
     }
 
@@ -78,6 +75,7 @@ class UsersController extends Controller
      * @return Grid
      */
     protected $title = '用户';
+
     protected function grid()
     {
         $grid = new Grid(new User);
@@ -97,7 +95,7 @@ class UsersController extends Controller
         $grid->created_at('注册时间');
 
 //        // 不在页面显示 `新建` 按钮，因为我们不需要在后台新建用户
-//        $grid->disableCreateButton();
+        $grid->disableCreateButton();
 
         //                                                              第一种写法
 //        // 同时在每一行也不显示 `编辑` 按钮
@@ -133,12 +131,12 @@ class UsersController extends Controller
     {
         $show = new Show(User::findOrFail($id));
 
-        $show->id('Id');
-        $show->name('Name');
-        $show->email('Email');
-        $show->email_verified_at('Email verified at');
-        $show->password('Password');
-        $show->remember_token('Remember token');
+        $show->id('用户id');
+        $show->name('姓名');
+        $show->email('邮箱');
+//        $show->email_verified_at('');
+        $show->password('加密后密码');
+//        $show->remember_token('Remember token');
         $show->created_at('Created at');
         $show->updated_at('Updated at');
 
@@ -154,11 +152,11 @@ class UsersController extends Controller
     {
         $form = new Form(new User);
 
-        $form->text('name', 'Name');
-        $form->email('email', 'Email');
-        $form->datetime('email_verified_at', 'Email verified at')->default(date('Y-m-d H:i:s'));
-        $form->password('password', 'Password');
-        $form->text('remember_token', 'Remember token');
+//        $form->text('name', '姓名');
+//        $form->email('email', '邮箱');
+//        $form->datetime('email_verified_at', '邮箱验证')->default(date('Y-m-d H:i:s'));
+        $form->password('password', '密码');
+//        $form->text('remember_token', 'token');
 
         return $form;
     }
